@@ -15,9 +15,9 @@ int maximum(int *arr, int n){
 }
 
 // фнкция поиска суммы элементов в массиве
-int arrsum (int *arr, int n){
+long int arrsum (int *arr, int n){
 
-    int sum = 0;
+    long int sum = 0;
 
     for (int i = 0; i < n; i++)
         sum += arr[i];
@@ -25,7 +25,7 @@ int arrsum (int *arr, int n){
     return sum;
 }
 
-int answ (int *arr, int n){
+long int answ (int *arr, int n){
 
     int arrtmp[n];
 
@@ -33,8 +33,8 @@ int answ (int *arr, int n){
         arrtmp[i] = arr[i];
     }
 
-    int s1 = 0;
-    int s2 = 0;
+    long int s1 = 0;
+    long int s2 = 0;
 
     cout<<"Process: "<<endl;
     cout<<"Begining: "<<"Masha: "<<s1<<' '<<"Petya: "<<s2<<endl;
@@ -60,7 +60,7 @@ int answ (int *arr, int n){
 
     cout<<endl;
 
-    int result;
+    long int result;
 
     if (s1 <= s2){
         result = s2 - s1;
@@ -89,7 +89,7 @@ int main () {
     }
     cout<<endl;
 
-    int result = answ(arr, n);
+    long int result = answ(arr, n);
 
     cout<<"Minimum portion difference: "<<result;
 
